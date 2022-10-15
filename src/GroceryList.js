@@ -10,6 +10,7 @@ export class GroceryList extends Component {
 
     onChangeEvent(apple) {
         this.setState({userInput: apple});
+
         
     }
 
@@ -19,7 +20,7 @@ export class GroceryList extends Component {
         }
         else {
         let listArray = this.state.groceryList;
-        console.log(listArray)
+        
         listArray.push(input);
         this.setState({groceryList: listArray, userInput: ''})
     }}
